@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bootstrap Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link href='http://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+        <!-- <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+
+
+        <style type="text/css" media="screen">
+            /** { margin: 0; padding: 0; }*/
+            
+            body {
+                background: #000000;
+                font: 62.5%/1.2 Arial, Verdana, Sans-Serif;
+                padding: 0 20px;
+            }
+
+            .page-title { color: white; }
+
+            
+            /*html,body{height:100%}*/
+
+            ul li { list-style-type:none;}
+            ul { margin:0;    padding: 0; }
+
+            .gallery{height:10vw;}
+            .cellgallery{height:100%;padding-top:1vh;padding-bottom:1vh; } 
+
+            /*a.image_container img { opacity:0.4; }
+            a.image_container img:hover { opacity:1;} */
+
+            .cellgallery { opacity:0.4; }
+            .cellgallery:hover { opacity:1; }
+            .cellgallery:hover > a.image_container { border-color:#1155FF; }
+
+
+
+
+
+/*            div > img {
+                position:absolute;
+                top:50%;
+                min-height:100%;
+                display:block;
+                left:50%;
+                -webkit-transform: translate(-50%, -50%);
+                min-width:100%;
+            }
+*/
+
+    a.image_container {
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+        margin:0;    padding: 0; 
+
+        border-style:solid; 
+        border-width:medium; 
+        border-color:#1155AA;
+    }
+    
+    a.image_container img {
+        height: 100%;        
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .display1{font-size: 15em}
+    .display2{font-size: 5em}
+
+ /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+    .display1{font-size: 4em}
+    .display2{font-size: 2em}
+
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    .display1{font-size: 4em}
+    .display2{font-size: 2em}
+
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .display1{font-size: 6em}
+        .display2{font-size: 3em}
+
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .display1{font-size: 10em}
+        .display2{font-size: 5em}
+
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        .display1{font-size: 10em}
+        .display2{font-size: 5em}
+
+    }
+
+
+
+
+
+
+
+/*            #cell {
+                background-image:url('images/fullscreen/1.jpg');
+                background-repeat:no-repeat;
+                background-size:100% 100%;
+                height: 250;
+            }
+*/        
+
+            /*img{min-height:100%;  margin: 0 auto;  overflow:hidden;  background:#FBC16D;}*/
+            /*img {max-height: 100vh; }*/
+
+/*            .gallery img.wide {
+                max-width: 100%;
+                max-height: 100%;
+                height: auto;
+            }
+            .gallery img.tall {
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+            }​
+*/
+
+
+            /*.img-responsive {     display: block;     max-width: 100%;     width: 100%;     height: auto; }*/
+
+           /* h1 { font-family: Georgia; font-style: italic; margin-bottom: 10px; }
+            
+            h2 {
+                font-family: Georgia;
+                font-style: italic;
+                margin: 25px 0 5px 0;
+            }
+            
+            p { font-size: 1.2em; }
+            
+            /*ul li { display: inline; }
+            
+            .wide {
+                border-bottom: 1px #000 solid;
+                width: 4000px;
+            }
+            
+            .fleft { float: left; margin: 0 20px 0 0; }
+            
+            .cboth { clear: both; }
+            
+            #main {
+                background: #fff;
+                margin: 0 auto;
+                padding: 30px;
+                width: 1000px; */
+            /*}*/
+
+
+            /*.parentcontainer {
+                height: 100%; 
+                width: 100%; 
+            }*/
+        </style>
+
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="container">
+            <div class="row text-lg-center text-sm-center text-xs-center">
+            <!-- <div class="col-lg-12 col-sm-12 col-xs-12"> </div> -->
+                <h1 class="page-title display1">Bootstrap Gallery</h1>
+                <h2 class="page-title display2">Gallery integration prettyPhoto with Bootstrap</h2>
+                <!-- <h2 class="col-lg-9 page-title">Bootstrap Gallery</h2> -->
+            </div>
+
+
+            <div class="row gallery">
+            <!-- <ul class="gallery"> -->
+<!--                 <div class="col-lg-3">    
+                    <li><a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures."><img src="images/fullscreen/1.jpg"  alt="Red round shape" class="img-responsive test"/></a></li>
+                </div>
+ -->
+
+ <!--                <div class="col-lg-3">    
+                    <img src="images/fullscreen/1.jpg" id="img1" alt="Red round shape"/>
+                </div>
+ -->
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery1]" title="Image n.1" class="image_container"><img src="images/fullscreen/1.jpg"  alt="Shape n.1" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery1]" title="Image n.2" class="image_container"><img src="images/fullscreen/2.jpg"  alt="Shape n.2" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/3.jpg" rel="prettyPhoto[gallery1]" title="Image n.3" class="image_container"><img src="images/fullscreen/3.jpg"  alt="Shape n.3" class="img-responsive"/></a>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery1]" title="Image n.4" class="image_container"><img src="images/fullscreen/4.jpg"  alt="Shape n.4" class="img-responsive"/></a>
+                </div>
+
+<!-- 
+
+                <div class="col-lg-3 ">    
+                    <li><a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><img src="images/fullscreen/2.jpg" alt="Nice building" class="img-responsive"/></a></li>
+                </div>
+
+                <div class="col-lg-3">    
+
+                    <li><a href="images/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><img src="images/fullscreen/3.jpg" alt="Nice building" class="img-responsive"/></a></li>
+
+                </div>
+
+                <div class="col-lg-3 ">    
+                    <li><a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><img src="images/fullscreen/4.jpg" alt="Nice building" class="img-responsive"/></a></li>
+                </div> 
+
+
+
+            </ul> -->
+            <!-- </div>             <div class="row gallery"> -->
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery1]" title="Image n.5" class="image_container"><img src="images/fullscreen/1.jpg"  alt="Shape n.5" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery1]" title="Image n.6" class="image_container"><img src="images/fullscreen/2.jpg"  alt="Shape n.6" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/5.jpg" rel="prettyPhoto[gallery1]" title="Image n.7" class="image_container"><img src="images/fullscreen/5.jpg"  alt="Shape n.7" class="img-responsive"/></a>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/6.jpg" rel="prettyPhoto[gallery1]" title="Image n.8" class="image_container"><img src="images/fullscreen/6.jpg"  alt="Shape n.8" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery1]" title="Image n.9" class="image_container"><img src="images/fullscreen/1.jpg"  alt="Shape n.9" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery1]" title="Image n.10" class="image_container"><img src="images/fullscreen/2.jpg"  alt="Shape n.10" class="img-responsive"/></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/5.jpg" rel="prettyPhoto[gallery1]" title="Image n.11" class="image_container"><img src="images/fullscreen/5.jpg"  alt="Shape n.11" class="img-responsive"/></a>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-3 col-xs-3 cellgallery">    
+                    <a href="images/fullscreen/6.jpg" rel="prettyPhoto[gallery1]" title="Image n.12" class="image_container"><img src="images/fullscreen/6.jpg"  alt="Shape n.12" class="img-responsive"/></a>
+                </div>
+
+            </div>
+
+        </div> <!-- /container -->
+
+
+        <script src="js/bootstrap.js"></script>
+
+        <!-- <script src="js/jquery-1.6.1.min.js"></script> -->
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+
+       <script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+                // $("area[rel^='prettyPhoto']").prettyPhoto();
+                
+                $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+                
+                // $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+        
+                // $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+                //     custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+                //     changepicturecallback: function(){ initialize(); }
+                // });
+
+            //     $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+            //         custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+            //         changepicturecallback: function(){ _bsap.exec(); }
+            //     });
+
+                // $('.container').find('img').each(function(){
+                //     var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+                //     $(this).addClass(imgClass);
+                // })
+
+                // $('.container').find('img').each(function(){
+                //     var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+                //     $(this).addClass(imgClass);
+                // })
+
+                
+                      // $('#img1').imgscale({ 
+                      //   parent : '.parentcontainer',
+                      //   fade : 1000 
+                      // }); 
+                
+
+
+             });
+
+            // $(window).load(function(){
+            // $('.container').find('img').each(function(){
+            //     var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+            //     $(this).addClass(imgClass);
+            // })         })
+        </script>
+
+
+
+
+    </body>
+</html>
